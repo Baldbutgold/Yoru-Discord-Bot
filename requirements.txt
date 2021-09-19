@@ -1,0 +1,6 @@
+Pillow
+discord.py
+gTTS
+pytesseract
+opencv-python
+
