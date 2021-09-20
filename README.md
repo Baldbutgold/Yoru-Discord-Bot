@@ -12,7 +12,6 @@ This bot is a simple bot with some simple features,
 ### Upcoming Features
 
 ***$google*** Googles something either returns a brief on the topic or a list of links </br>
-***$say*** joins the person who sent the message Vc and says whatever is follwed by the $say </br>
 ***$start*** & ***$stop*** starts and stops the minecraft server </br>
 ***$world*** Send a link for the world download of minecraft </br>
 
