@@ -3,4 +3,4 @@ discord.py
 gTTS
 pytesseract
 opencv-python
-
+opuslib
