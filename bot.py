@@ -1,7 +1,12 @@
+from discord import FFmpegPCMAudio
+from discord.utils import get
+import tts
 from decouple import config
 import os 
 import discord
 import image2text
+
+#logging to a file
 
 client = discord.Client()
 
@@ -15,12 +20,28 @@ async def on_message(message):
     if message.author == client.user:
         return
 #type back prefix=$type
+
     elif message.content.startswith("$type"):
         msg = message.content[5:]
         await message.delete()
         await message.channel.send(msg)
+#saying function joining vc and playing mp3 file
 
-
+    elif message.content.startswith("$say"):
+        say = message.content[4:]
+        tts.ttsmp3(say)
+        user = message.author
+        channel= user.voice.channel
+        if not channel:    
+            await message.chnanel.send(f"{user} is not in a vc")
+            return
+        voice = get(client.voice_clients )
+        if voice and voice.is_connected():
+            await voice.move_to(channel)
+        else:
+            voice = await channel.connect()
+        source = FFmpegPCMAudio('say.mp3')
+        player = voice.play(source)
 #cords extractor prefix=extract
     if message.content.startswith("extract"):
 #        await message.channel.send(message.attachments[0])
