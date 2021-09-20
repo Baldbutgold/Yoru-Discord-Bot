@@ -5,6 +5,7 @@ This bot is a simple bot with some simple features,
 ### Features
 ***extract*** allow you to extract XYZ cords from a minecraft F3 screenshot  
 ***$type*** It types that simple xD  
+***$say*** It will say something in Voice chat
 ***$help*** A function that displays all commands that are available   
 
 

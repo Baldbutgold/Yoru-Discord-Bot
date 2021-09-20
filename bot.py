@@ -52,8 +52,10 @@ async def on_message(message):
     if message.content.startswith("$help"):
         #simple help function
         await message.channel.send("""
-        $type I will type something back to you
-extract I will extract cords from a minecraft F3 screenshot
+        **$type** I will type something back to you
+**extract** I will extract cords from a minecraft F3 screenshot
+**$help** اسم على مسمى
+**$say** I will say DUH...
 Upcoming commands coming soon!
         """)
 
