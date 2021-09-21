@@ -5,7 +5,7 @@ from decouple import config
 import os 
 import discord
 import image2text
-
+import manageserver
 #logging to a file
 
 client = discord.Client()
@@ -58,5 +58,11 @@ async def on_message(message):
 **$say** I will say DUH...
 Upcoming commands coming soon!
         """)
-
+    #starting and stopping the server
+    if message.content.startswith("$stop"):
+        manageserver.stop()  
+        await message.channel.send("Server has stopped")
+    if message.content.startswith("$start"):
+        manageserver.start()
+        await message.channel.send("Server has started, or already running")
 client.run(config('TOKEN'))
