@@ -5,7 +5,7 @@ from decouple import config
 import os 
 import discord
 import image2text
-
+import manageserver
 #logging to a file
 
 client = discord.Client()
@@ -49,6 +49,8 @@ async def on_message(message):
         img2txt = image2text.image2text()
         #a module that crops the image into the xyz pos, and extract text, returns only text
         await message.channel.send(img2txt, file=discord.File('img.png'))
+    if message.content.startswith("$world"):
+        await message.channel.send("https://cheaphosting.live")
     if message.content.startswith("$help"):
         #simple help function
         await message.channel.send("""
@@ -56,7 +58,13 @@ async def on_message(message):
 **extract** I will extract cords from a minecraft F3 screenshot
 **$help** اسم على مسمى
 **$say** I will say DUH...
-Upcoming commands coming soon!
-        """)
-
+**$world** Minecraft file download        
+""")
+    #starting and stopping the server
+    if message.content.startswith("$stop"):
+        manageserver.stop()  
+        await message.channel.send("Server has stopped")
+    if message.content.startswith("$start"):
+        manageserver.start()
+        await message.channel.send("Server has started, or already running")
 client.run(config('TOKEN'))
