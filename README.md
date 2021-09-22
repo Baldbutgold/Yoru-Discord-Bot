@@ -1,7 +1,7 @@
 # Simple Discord Bot for Yoru's Server
 
 This bot is a simple bot with some simple features,  
-Here is the website for the bot : [cheaphosting.live](https://cheaphosting.live)
+Here is the website for the bot : [cheaphosting.live](https://cheaphosting.live)  
 You can invite the bot from there.
 
 ### Features
