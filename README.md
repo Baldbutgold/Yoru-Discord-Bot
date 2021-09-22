@@ -1,20 +1,22 @@
 # Simple Discord Bot for Yoru's Server
 
 This bot is a simple bot with some simple features,  
+Here is the website for the bot : [cheaphosting.live](https://cheaphosting.live)
+You can invite the bot from there.
 
 ### Features
+
 ***extract*** allow you to extract XYZ cords from a minecraft F3 screenshot  
 ***$type*** It types that simple xD  
-***$say*** It will say something in Voice chat  
 ***$help*** A function that displays all commands that are available   
+***$say*** joins the person who sent the message Vc and says whatever is follwed by the $say </br>
+***$start*** & ***$stop*** starts and stops the minecraft server </br>
+***$world*** Send a link for the world download of minecraft </br>
 
 
 ### Upcoming Features
 
 ***$google*** Googles something either returns a brief on the topic or a list of links </br>
-***$say*** joins the person who sent the message Vc and says whatever is follwed by the $say </br>
-***$start*** & ***$stop*** starts and stops the minecraft server </br>
-***$world*** Send a link for the world download of minecraft </br>
 
 #### Why I'm doing this?
 
