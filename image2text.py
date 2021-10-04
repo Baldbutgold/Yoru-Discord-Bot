@@ -1,3 +1,4 @@
+#Image to text
 import pytesseract
 import cv2
 #import re
