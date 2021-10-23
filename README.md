@@ -16,7 +16,7 @@ You can invite the bot from there.
 ### Upcoming Features
 
 ***$google*** Googles something either returns a brief on the topic or a list of links </br>
-***$listen*** Listens to what you are saying in voice chat and types it as text or say it back with a twist like a monster voice
+***$listen*** Listens to what you are saying in voice chat and types it as text or say it back with a twist like a monster voice</br>
 ***xo*** Be Ready to play X & O tictactoe
 
 #### Why I'm doing this?
